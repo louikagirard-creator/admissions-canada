@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://louikagirard-creator.github.io/admissions-canada/sitemap.xml
