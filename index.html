@@ -68,13 +68,14 @@
 
 <script>
   // À remplir avant la mise en ligne. Tant que c'est vide, les boutons sont grisés.
-  const WHATSAPP = ""; // numéro en chiffres seulement, avec l'indicatif : ex. "16135551234"
+  const WHATSAPP = "18196395358"; // numéro WhatsApp Business, chiffres seulement, avec l'indicatif
+  const MESSAGE_WHATSAPP = "Bonjour, je veux un diagnostic gratuit pour étudier au Canada.";
   const FORMULAIRE = "https://docs.google.com/forms/d/e/1FAIpQLSfpNTmNaUqt3iOnL_F3751Bq4_EZ-hFsQUGsPIdnlfzXp_Y2A/viewform"; // fiche Google Forms (publiée le 11 novembre 2026)
   const lier = (selecteur, url) => document.querySelectorAll(selecteur).forEach((a) => {
     if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
     else { a.setAttribute("aria-disabled", "true"); a.title = "Bientôt disponible"; }
   });
-  lier(".js-whatsapp", WHATSAPP ? "https://wa.me/" + WHATSAPP : "");
+  lier(".js-whatsapp", WHATSAPP ? "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MESSAGE_WHATSAPP) : "");
   lier(".js-formulaire", FORMULAIRE);
 </script>
 </body>
