@@ -1,76 +1,200 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Exemple de fiche programmes</title>
-<meta name="description" content="Un exemple réel de ce que tu reçois avec l'offre « Choix de programmes » : profil fictif, données vérifiées sur les sites officiels.">
-<link rel="canonical" href="https://louikagirard-creator.github.io/admissions-canada/exemple.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Exemple de fiche programmes">
-<meta property="og:description" content="Un exemple réel de ce que tu reçois avec l'offre « Choix de programmes » : profil fictif, données vérifiées sur les sites officiels.">
-<meta property="og:url" content="https://louikagirard-creator.github.io/admissions-canada/exemple.html">
-<meta property="og:locale" content="fr_CA">
-<link rel="stylesheet" href="style.css">
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Exemple de fiche programmes</title>
 <style>
-  .fiche { display: grid; gap: 12px; }
-  .prog { background: var(--surface); border: 1px solid var(--ligne); border-radius: 12px; padding: 16px; }
-  .prog h3 { margin: 0 0 8px; font-size: 18px; }
-  .prog dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; margin: 0 0 8px; font-size: 15px; }
-  .prog dt { color: var(--doux); }
-  .prog dd { margin: 0; }
-  @media (max-width: 480px) { .prog dl { grid-template-columns: 1fr; } .prog dd { margin-bottom: 6px; } }
-</style>
-</head>
-<body>
-<header>
-  <div class="marque"><a href="index.html">Cap Admission Canada</a></div>
-  <h1>Exemple : ce que tu reçois avec le « Choix de programmes »</h1>
-  <p class="doux">Profil fictif. Les données des programmes sont réelles, relevées le 11 novembre 2026 sur les sites officiels des universités.</p>
-  <p><strong>Aminata (fictive)</strong> · Sénégal · licence en informatique, 14/20 · vise une maîtrise en informatique en français · septembre 2027 · budget de 10 000 à 20 000 $ par an</p>
-</header>
-<main>
-  <h2>Les programmes</h2>
-  <div class="fiche">
-    <div class="prog">
-      <h3>1. Université de Moncton : maîtrise ès sciences (informatique)</h3>
-      <dl>
-        <dt>Langue</dt><dd>français</dd>
-        <dt>Coût (2026-2027)</dt><dd>17 045 $ la 1re année, 10 097 $ la 2e, droits, frais et assurance maladie compris (calculateur officiel, étudiant international)</dd>
-        <dt>Date limite</dt><dd>31 mai pour l'automne (étudiants internationaux)</dd>
-        <dt>Programme pilote francophone</dt><dd>oui, établissement participant</dd>
-      </dl>
-      <p><strong>Pourquoi :</strong> en français et dans le budget dès la 2e année. <strong>Point faible :</strong> vérifier comment l'université convertit une moyenne de 14/20.</p>
-      <p class="doux"><a href="https://www.umoncton.ca/node/270" rel="noopener">Coûts</a> · <a href="https://www.umoncton.ca/admission/dates-importantes" rel="noopener">Dates</a></p>
-    </div>
-    <div class="prog">
-      <h3>2. Université Laval : maîtrise en informatique avec mémoire</h3>
-      <dl>
-        <dt>Langue</dt><dd>français</dd>
-        <dt>Coût (2026-2027)</dt><dd>742 $ par crédit (programmes avec recherche, étudiant international), plus les frais d'associations et d'assurance</dd>
-        <dt>Date limite</dt><dd>1er février pour l'automne (jusqu'au 1er avril pour certaines maîtrises avec mémoire, à confirmer)</dd>
-        <dt>Programme pilote francophone</dt><dd>non (Québec)</dd>
-      </dl>
-      <p><strong>Pourquoi :</strong> grande faculté, en français. <strong>Point faible :</strong> il faut avoir trouvé un directeur de recherche <em>avant</em> de déposer la demande. Il faut écrire aux professeurs dès maintenant.</p>
-      <p class="doux"><a href="https://www.ulaval.ca/etudes/programmes/maitrise-en-informatique-avec-memoire" rel="noopener">Programme</a> · <a href="https://www.dc.ulaval.ca/etudes/droits-de-scolarite/etudiant-de-linternational/programmes-de-2e-cycle-avec-recherche/automne-2026-hiver-2027" rel="noopener">Coûts</a> · <a href="https://www.ulaval.ca/admission/deposez-votre-demande-dadmission/dates-limites-de-depot" rel="noopener">Dates</a></p>
-    </div>
-    <div class="prog">
-      <h3>3. Université d'Ottawa : maîtrise en informatique</h3>
-      <dl>
-        <dt>Langue</dt><dd><strong>anglais</strong>, selon le catalogue 2025-2026</dd>
-        <dt>Programme pilote francophone</dt><dd>non pour ce programme</dd>
-      </dl>
-      <p><strong>Le piège :</strong> l'université est bilingue, mais cette maîtrise est enseignée en anglais. « Université francophone » ne veut pas dire « programme en français ».</p>
-      <p class="doux"><a href="https://catalogue.uottawa.ca/fr/etudes-sup/maitrise-informatique/" rel="noopener">Catalogue</a></p>
-    </div>
+@page{size:A4;margin:14mm 14mm 16mm}
+:root{--bleu:#123a6b;--rouge:#c8102e;--gris:#5b6472;--fond:#f4f6fa}
+*{box-sizing:border-box}body{font:10.5pt/1.45 -apple-system,"Helvetica Neue",Arial,sans-serif;color:#1d2330;margin:0}
+.page{page-break-after:always}h1{font-size:24pt;color:var(--bleu);margin:0 0 4px}h2{font-size:15pt;color:var(--bleu);margin:0}
+h3{font-size:13pt;color:var(--bleu);border-bottom:2px solid var(--rouge);padding-bottom:3px;margin:18px 0 8px}h4{font-size:10.5pt;color:var(--bleu);margin:12px 0 4px;text-transform:uppercase;letter-spacing:.03em}
+.couv{display:flex;flex-direction:column;justify-content:space-between;height:265mm}.marque{font-weight:700;color:var(--rouge);letter-spacing:.08em}
+.boite{background:var(--fond);border-left:4px solid var(--bleu);padding:10px 14px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{padding:5px 7px;border-bottom:1px solid #dde2ea;text-align:left;vertical-align:top}th{background:var(--bleu);color:#fff;font-size:9pt}
+.comp td{font-size:9pt}.tete{display:flex;gap:12px;align-items:center}.num{background:var(--bleu);color:#fff;font-weight:700;font-size:16pt;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.sous{margin:2px 0 0;color:var(--gris)}.badge{margin-left:auto;padding:4px 10px;border-radius:12px;font-weight:700;font-size:9pt;white-space:nowrap}.ok{background:#dff5e3;color:#1b6b2f}.moy{background:#fff1d6;color:#8a5a00}.bas{background:#fde2e2;color:#9b1c1c}
+.raison{background:var(--fond);padding:7px 10px;border-radius:4px;margin:10px 0}.grille{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+dl{margin:0}dt{font-weight:600;color:var(--gris);font-size:9pt;margin-top:5px}dd{margin:0}
+.cout td:nth-child(2){font-weight:600;white-space:nowrap}.note{color:var(--gris);font-size:8.5pt}.tot td{font-weight:700;background:var(--fond);border-top:2px solid var(--bleu)}
+ul{margin:4px 0;padding-left:18px}li{margin:3px 0}.pm p{background:var(--fond);padding:7px 10px;border-radius:4px;margin:8px 0 0}.liens{font-size:8pt;color:var(--gris);margin-top:10px;word-break:break-all}
+.cal td:first-child{font-weight:700;width:34%;color:var(--bleu)}.check li{list-style:none;margin:6px 0}.check li:before{content:"☐  ";font-size:12pt}
+.reco li{margin:8px 0}.pied{font-size:8pt;color:var(--gris)}
+</style><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Exemple complet de la fiche « Choix de programmes » (49 $) : 6 maîtrises vérifiées, chances, coût réel, bourses, calendrier. Profil fictif, données officielles.">
+<link rel="canonical" href="https://louikagirard-creator.github.io/admissions-canada/exemple.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Exemple de fiche « Choix de programmes »">
+<meta property="og:url" content="https://louikagirard-creator.github.io/admissions-canada/exemple.html"><meta property="og:locale" content="fr_CA">
+<style>@media screen{body{max-width:860px;margin:0 auto;padding:16px;background:#fff}.page{border-bottom:1px dashed #c9d0db;padding:24px 0}.couv{height:auto;gap:24px}
+.barre{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;background:#123a6b;color:#fff;padding:10px 14px;border-radius:8px}
+.barre a{color:#fff;font-weight:600}.barre .btn{background:#c8102e;padding:6px 12px;border-radius:6px;text-decoration:none}}
+@media screen and (max-width:640px){body{padding:12px}td,th{word-break:break-word}.grille{grid-template-columns:1fr}.comp th:nth-child(3),.comp td:nth-child(3){display:none}.tete{flex-wrap:wrap}.badge{margin-left:0}table{font-size:9pt}}
+@media print{.barre{display:none}}</style>
+</head><body>
+<div class="barre"><a href="./">← Retour au site</a><span>Exemple réel de ce que tu reçois pour 49 $ (profil fictif)</span><a class="btn" href="exemple-choix-programmes.pdf" download>Télécharger le PDF</a></div>
+
+<section class="page couv">
+  <div><p class="marque">CAP ADMISSION CANADA</p><h1>Ton choix de programmes</h1><p style="font-size:13pt;color:var(--gris);margin:0">Maîtrise en informatique · Septembre 2027</p></div>
+  <div class="boite"><p style="margin:0 0 6px"><b>Préparé pour :</b> Aminata D. (profil fictif)</p><p style="margin:0 0 6px"><b>Date :</b> 16 novembre 2026</p>
+  <p style="margin:0"><b>Dans ce document :</b> ton profil analysé · 6 maîtrises en français vérifiées · tes chances pour chacune · le vrai coût de la 1re année · les bourses · ton calendrier semaine par semaine · la liste des documents · mon conseil final.</p></div>
+  <p class="pied">Toutes les données (dates, conditions, frais) ont été relevées sur les sites officiels des universités le 16 novembre 2026. Les frais 2027-2028 ne sont pas encore publiés : ce sont ceux de 2026-2027. Équivalents en FCFA au taux de 1 $ CA ≈ 414 FCFA. Ce document est une aide à l'admission ; il ne contient aucun conseil sur le permis d'études ou le visa (pour ça : un consultant réglementé, register.college-ic.ca).</p>
+</section>
+
+<section class="page">
+  <h3>1. Ton profil</h3>
+  <table><tr><td style="width:24%;font-weight:600">Pays</td><td>Sénégal</td></tr><tr><td style="width:24%;font-weight:600">Diplôme</td><td>Licence en informatique (3 ans), Université Cheikh Anta Diop</td></tr><tr><td style="width:24%;font-weight:600">Moyenne</td><td>14/20, soit environ 3,3 sur 4,3 (B+) selon une conversion courante. Chaque université fait sa propre conversion : c'est une estimation.</td></tr><tr><td style="width:24%;font-weight:600">Projet</td><td>Maîtrise en informatique, en français</td></tr><tr><td style="width:24%;font-weight:600">Rentrée</td><td>Septembre 2027</td></tr><tr><td style="width:24%;font-weight:600">Budget</td><td>10 000 à 20 000 $ par an pour la scolarité</td></tr><tr><td style="width:24%;font-weight:600">Langues</td><td>Français ; anglais intermédiaire ; aucun test passé</td></tr></table>
+  <h4>Tes points forts</h4><ul><li>Licence <b>dans le même domaine</b> que la maîtrise visée : aucune mise à niveau à prévoir.</li><li>Moyenne au-dessus du minimum de 5 programmes sur 6.</li><li>Francophone : aucun test de français à passer, et tu es admissible au programme pilote francophone d'IRCC à Moncton.</li></ul>
+  <h4>Ce qui peut bloquer</h4><ul><li><b>Le temps</b> : 2 dates limites tombent le 1er février 2027, dans 11 semaines.</li><li><b>Le budget</b> : la 1re année complète (scolarité + vie) coûte entre 28 000 et 41 000 $ avant bourse. Les bourses d'exemption font toute la différence : il faut les demander.</li><li><b>L'anglais</b> : intermédiaire, c'est un frein seulement pour l'Université de Montréal.</li></ul>
+  <h3>2. Les 6 programmes en un coup d'œil</h3>
+  <table class="comp"><tr><th>#</th><th>Université</th><th>Moyenne min.</th><th>Date limite</th><th>1re année (tout compris)</th><th>Chances</th></tr>
+  <tr><td>1</td><td><b>Université du Québec en Outaouais (UQO)</b><br>Gatineau</td><td>3,0 sur 4,3</td><td>1er mars 2027</td><td><b>29 950 $</b><br>≈ 12 399 000 FCFA</td><td><span class="badge ok">Chances élevées</span></td></tr><tr><td>2</td><td><b>Université de Moncton</b><br>Moncton</td><td>3,0 sur 4,3</td><td>31 mai 2027</td><td><b>28 045 $</b><br>≈ 11 611 000 FCFA</td><td><span class="badge ok">Chances élevées</span></td></tr><tr><td>3</td><td><b>Université de Sherbrooke</b><br>Sherbrooke</td><td>2,7 sur 4,3</td><td>Non publiée pour 2027 : je te préviens dès qu'elle sort</td><td><b>33 960 $</b><br>≈ 14 059 000 FCFA</td><td><span class="badge ok">Chances élevées</span></td></tr><tr><td>4</td><td><b>Université Laval</b><br>Québec</td><td>2,67 sur 4,33</td><td>1er février 2027</td><td><b>31 028 $</b><br>≈ 12 846 000 FCFA</td><td><span class="badge moy">Chances moyennes</span></td></tr><tr><td>5</td><td><b>Université de Montréal</b><br>Montréal</td><td>Non publiée pour ce programme</td><td>1er février 2027</td><td><b>36 249 $</b><br>≈ 15 007 000 FCFA</td><td><span class="badge moy">Chances moyennes</span></td></tr><tr><td>6</td><td><b>UQAM</b><br>Montréal</td><td>3,2 sur 4,3</td><td>1er mars 2027</td><td><b>41 208 $</b><br>≈ 17 060 000 FCFA</td><td><span class="badge moy">Chances moyennes</span></td></tr></table>
+  <p class="note">Classement selon tes chances, ton budget et les bourses possibles. « Tout compris » = scolarité, frais, assurance maladie, logement et nourriture, avant bourse.</p>
+  <div class="boite" style="margin-top:12px"><b>⚠️ Piège évité :</b> l'Université d'Ottawa est bilingue, mais sa maîtrise en informatique est enseignée <b>en anglais</b> selon son catalogue. Je ne l'ai donc pas retenue.</div>
+</section>
+
+
+<section class="page prog">
+  <div class="tete"><span class="num">1</span><div><h2>Université du Québec en Outaouais (UQO)</h2><p class="sous">Maîtrise en informatique (avec mémoire, 3097, ou professionnelle, 3037) · Gatineau (Québec), en face d'Ottawa</p></div><span class="badge ok">Chances élevées</span></div>
+  <p class="raison"><b>Pourquoi ces chances :</b> Ta moyenne estimée (3,3) dépasse le minimum (3,0), et ta licence est dans le bon domaine.</p>
+  <div class="grille">
+    <div><h4>Admission</h4>
+      <dl><dt>Moyenne exigée</dt><dd>3,0 sur 4,3. Entre 2,8 et 3,0 : dossier étudié par un comité.</dd><dt>Test de langue</dt><dd>Aucun si ton diplôme vient d'une université francophone (c'est ton cas).</dd><dt>Documents</dt><dd>CV, relevés officiels, lettre d'intention de 300 à 500 mots, acte de naissance.</dd>
+      <dt>Frais de demande</dt><dd>120 $</dd></dl></div>
+    <div><h4>Dates</h4>
+      <dl><dt>Date limite</dt><dd><b>1er mars 2027 (une autre page indique le 1er février : dépose avant le 1er février pour être sûre)</b></dd><dt>Début des cours</dt><dd>7 septembre 2027</dd><dt>Durée</dt><dd>45 crédits (environ 2 ans)</dd><dt>Langue</dt><dd>Français</dd></dl></div>
   </div>
+  <h4>Ce que coûte la 1re année</h4>
+  <table class="cout">
+    <tr><td>Scolarité et frais</td><td>18 550 $</td><td class="note">droits et frais forfaitaires 2026-2027, 2 sessions à temps plein (simulateur officiel conseillé)</td></tr>
+    <tr><td>Assurance maladie obligatoire</td><td>900 $</td><td></td></tr>
+    <tr><td>Logement et nourriture</td><td>10 500 $</td><td class="note">nourriture 4 680 $ (UQO) + chambre en ville environ 500 $/mois</td></tr>
+    <tr class="tot"><td>Total estimé</td><td>29 950 $</td><td>≈ 12 399 000 FCFA</td></tr>
+  </table>
+  <h4>Bourses et réductions possibles</h4><ul><li><b>Bourse d'exemption pour étudiants internationaux</b> : peut ramener la scolarité presque au tarif québécois (environ 2 340 $ par an au lieu de 18 550 $). Sur demande : formulaire et texte de 300 mots, moyenne d'au moins 3,0, temps plein. 67 bourses pour 2026-2027.</li></ul>
+  <div class="grille pm"><p><b>👍 Le plus :</b> Le moins cher si tu obtiens la bourse d'exemption. Petite ville, logement abordable, à 10 minutes d'Ottawa.</p><p><b>⚠️ Le point faible :</b> Bourse limitée à 67 places : il faut une bonne lettre et déposer tôt.</p></div>
+  <p class="liens">Sources officielles : uqo.ca/programmes/3097 · uqo.ca/international/bourse-dexemption-pour-personnes-etudiantes-internationales · simulationdesfrais.uqo.ca</p>
+</section>
+<section class="page prog">
+  <div class="tete"><span class="num">2</span><div><h2>Université de Moncton</h2><p class="sous">Maîtrise ès sciences (informatique) · Moncton (Nouveau-Brunswick)</p></div><span class="badge ok">Chances élevées</span></div>
+  <p class="raison"><b>Pourquoi ces chances :</b> Moyenne estimée au-dessus du minimum, programme en français, date limite tardive : tu as le temps.</p>
+  <div class="grille">
+    <div><h4>Admission</h4>
+      <dl><dt>Moyenne exigée</dt><dd>3,0 sur 4,3.</dd><dt>Test de langue</dt><dd>Aucun test exigé trouvé pour un francophone.</dd><dt>Documents</dt><dd>Demande en ligne sur socrate.umoncton.ca : relevés, diplôme, CV, lettres de recommandation.</dd>
+      <dt>Frais de demande</dt><dd>300 $ (dont 230 $ remboursés sur ta 1re facture si tu t'inscris)</dd></dl></div>
+    <div><h4>Dates</h4>
+      <dl><dt>Date limite</dt><dd><b>31 mai 2027 (étudiants internationaux, automne)</b></dd><dt>Début des cours</dt><dd>Septembre 2027</dd><dt>Durée</dt><dd>45 crédits, environ 2 ans</dd><dt>Langue</dt><dd>Français</dd></dl></div>
+  </div>
+  <h4>Ce que coûte la 1re année</h4>
+  <table class="cout">
+    <tr><td>Scolarité et frais</td><td>17 045 $</td><td class="note">1re année, droits, frais et assurance maladie compris (calculateur officiel). 2e année : environ 10 097 $</td></tr>
+    
+    <tr><td>Logement et nourriture</td><td>11 000 $</td><td class="note">estimation pour une chambre et la nourriture à Moncton (non publiée par l'université)</td></tr>
+    <tr class="tot"><td>Total estimé</td><td>28 045 $</td><td>≈ 11 611 000 FCFA</td></tr>
+  </table>
+  <h4>Bourses et réductions possibles</h4><ul><li>Moncton participe au <b>programme pilote pour étudiants francophones hors Québec</b> d'IRCC (Sénégal admissible). Pour ce que ça change sur le permis, vois un consultant réglementé.</li><li>Bourses d'excellence aux cycles supérieurs : montants non publiés, à demander à la Faculté des études supérieures.</li></ul>
+  <div class="grille pm"><p><b>👍 Le plus :</b> Dans ton budget, 2e année beaucoup moins chère. Communauté francophone acadienne.</p><p><b>⚠️ Le point faible :</b> Petit département : peu de choix de sujets de recherche.</p></div>
+  <p class="liens">Sources officielles : umoncton.ca/admission/dates-importantes · umoncton.ca/node/270</p>
+</section>
+<section class="page prog">
+  <div class="tete"><span class="num">3</span><div><h2>Université de Sherbrooke</h2><p class="sous">Maîtrise en informatique (type cours, ou recherche) · Sherbrooke (Québec)</p></div><span class="badge ok">Chances élevées</span></div>
+  <p class="raison"><b>Pourquoi ces chances :</b> Minimum de 2,7 : ta moyenne estimée le dépasse nettement.</p>
+  <div class="grille">
+    <div><h4>Admission</h4>
+      <dl><dt>Moyenne exigée</dt><dd>2,7 sur 4,3. En recherche, un professeur doit accepter de te superviser.</dd><dt>Test de langue</dt><dd>Aucun test exigé trouvé pour un francophone.</dd><dt>Documents</dt><dd>Relevés et diplômes, 3 lettres de recommandation (formulaire de l'université), CV.</dd>
+      <dt>Frais de demande</dt><dd>106 $</dd></dl></div>
+    <div><h4>Dates</h4>
+      <dl><dt>Date limite</dt><dd><b>Non publiée pour 2027 : je te préviens dès qu'elle sort (souvent en hiver)</b></dd><dt>Début des cours</dt><dd>Septembre 2027</dd><dt>Durée</dt><dd>45 crédits</dd><dt>Langue</dt><dd>Français</dd></dl></div>
+  </div>
+  <h4>Ce que coûte la 1re année</h4>
+  <table class="cout">
+    <tr><td>Scolarité et frais</td><td>17 010 $</td><td class="note">type cours : 27 010 $ moins l'appui financier de 5 000 $ par trimestre (2 trimestres). Type recherche : 22 290 $ avant réduction</td></tr>
+    <tr><td>Assurance maladie obligatoire</td><td>900 $</td><td></td></tr>
+    <tr><td>Logement et nourriture</td><td>16 050 $</td><td class="note">logement 7 950 $ + nourriture 8 100 $ (estimation de l'université)</td></tr>
+    <tr class="tot"><td>Total estimé</td><td>33 960 $</td><td>≈ 14 059 000 FCFA</td></tr>
+  </table>
+  <h4>Bourses et réductions possibles</h4><ul><li><b>Appui financier (type cours)</b> : 5 000 $ par trimestre à temps plein, jusqu'à 15 000 $. Formulaire à remplir chaque trimestre.</li><li><b>Type recherche</b> : réduction d'au moins 50 % des droits majorés pendant 3 trimestres.</li><li>Bourse d'admission de 2 000 $ et bourses d'excellence de 5 000 à 7 500 $ selon le dossier.</li></ul>
+  <div class="grille pm"><p><b>👍 Le plus :</b> Beaucoup d'aide financière pour les internationaux. Ville étudiante, vie moins chère qu'à Montréal.</p><p><b>⚠️ Le point faible :</b> Date limite 2027 pas encore publiée.</p></div>
+  <p class="liens">Sources officielles : usherbrooke.ca/admission/programme/654/maitrise-en-informatique · usherbrooke.ca/admission/couts-et-aide-financiere/frais-scolarite/personnes-etudiantes-internationales</p>
+</section>
+<section class="page prog">
+  <div class="tete"><span class="num">4</span><div><h2>Université Laval</h2><p class="sous">Maîtrise en informatique avec mémoire · Québec (Québec)</p></div><span class="badge moy">Chances moyennes</span></div>
+  <p class="raison"><b>Pourquoi ces chances :</b> Ta moyenne suffit, mais <b>sans directeur de recherche, la demande est refusée</b>. Il reste 11 semaines pour en trouver un.</p>
+  <div class="grille">
+    <div><h4>Admission</h4>
+      <dl><dt>Moyenne exigée</dt><dd>2,67 sur 4,33.</dd><dt>Test de langue</dt><dd>Aucun test exigé pour un francophone (le français écrit et parlé est essentiel).</dd><dt>Documents</dt><dd>CV, lettre d'intention, 3 rapports d'appréciation, <b>confirmation écrite du professeur qui sera ton directeur de recherche</b>.</dd>
+      <dt>Frais de demande</dt><dd>à confirmer au dépôt</dd></dl></div>
+    <div><h4>Dates</h4>
+      <dl><dt>Date limite</dt><dd><b>1er février 2027</b></dd><dt>Début des cours</dt><dd>Septembre 2027</dd><dt>Durée</dt><dd>45 crédits, environ 2 ans</dd><dt>Langue</dt><dd>Français</dd></dl></div>
+  </div>
+  <h4>Ce que coûte la 1re année</h4>
+  <table class="cout">
+    <tr><td>Scolarité et frais</td><td>18 128 $</td><td class="note">2 sessions de 12 crédits, programmes avec recherche, 2026-2027</td></tr>
+    <tr><td>Assurance maladie obligatoire</td><td>900 $</td><td></td></tr>
+    <tr><td>Logement et nourriture</td><td>12 000 $</td><td class="note">estimation pour une chambre et la nourriture à Québec (page budget de l'université indisponible)</td></tr>
+    <tr class="tot"><td>Total estimé</td><td>31 028 $</td><td>≈ 12 846 000 FCFA</td></tr>
+  </table>
+  <h4>Bourses et réductions possibles</h4><ul><li><b>Bourses Essor</b> : jusqu'à 20 000 $ à la maîtrise, sur concours.</li><li>Bourses de réussite de la faculté (montants non publiés).</li></ul>
+  <div class="grille pm"><p><b>👍 Le plus :</b> Grande faculté de sciences et génie, beaucoup de sujets (IA, robotique, optimisation).</p><p><b>⚠️ Le point faible :</b> Il faut écrire aux professeurs tout de suite. Date limite la plus proche.</p></div>
+  <p class="liens">Sources officielles : ulaval.ca/etudes/programmes/maitrise-en-informatique-avec-memoire · ulaval.ca/etudes/droits-de-scolarite/etudiant-de-linternational</p>
+</section>
+<section class="page prog">
+  <div class="tete"><span class="num">5</span><div><h2>Université de Montréal</h2><p class="sous">Maîtrise en informatique (avec ou sans mémoire) · Montréal (Québec)</p></div><span class="badge moy">Chances moyennes</span></div>
+  <p class="raison"><b>Pourquoi ces chances :</b> Bon niveau, mais ton anglais intermédiaire est un point faible ici, et la moyenne exigée n'est pas publiée.</p>
+  <div class="grille">
+    <div><h4>Admission</h4>
+      <dl><dt>Moyenne exigée</dt><dd>Non publiée pour ce programme.</dd><dt>Test de langue</dt><dd>Aucun test de français. Anglais : « très bonne maîtrise », sans score exigé.</dd><dt>Documents</dt><dd>Relevés et diplômes, 3 lettres de recommandation, CV.</dd>
+      <dt>Frais de demande</dt><dd>à confirmer au dépôt</dd></dl></div>
+    <div><h4>Dates</h4>
+      <dl><dt>Date limite</dt><dd><b>1er février 2027 (dépôt ouvert depuis le 1er août 2026)</b></dd><dt>Début des cours</dt><dd>Août 2027</dd><dt>Durée</dt><dd>45 crédits</dd><dt>Langue</dt><dd>Français, mais une très bonne maîtrise de l'anglais est demandée</dd></dl></div>
+  </div>
+  <h4>Ce que coûte la 1re année</h4>
+  <table class="cout">
+    <tr><td>Scolarité et frais</td><td>21 349 $</td><td class="note">avec mémoire, 2 trimestres 2026-2027, plus environ 554 $ de frais par trimestre</td></tr>
+    <tr><td>Assurance maladie obligatoire</td><td>900 $</td><td></td></tr>
+    <tr><td>Logement et nourriture</td><td>14 000 $</td><td class="note">colocation 450 à 800 $/mois + nourriture 410 $/mois (livret de l'université)</td></tr>
+    <tr class="tot"><td>Total estimé</td><td>36 249 $</td><td>≈ 15 007 000 FCFA</td></tr>
+  </table>
+  <h4>Bourses et réductions possibles</h4><ul><li><b>Bourse d'exemption UdeM</b> pour étudiants internationaux (montant non publié).</li><li>Bourses d'études de 2e cycle (non chiffrées).</li></ul>
+  <div class="grille pm"><p><b>👍 Le plus :</b> Très grand pôle en intelligence artificielle (Mila).</p><p><b>⚠️ Le point faible :</b> Le plus cher avec Montréal comme ville. Anglais à améliorer.</p></div>
+  <p class="liens">Sources officielles : admission.umontreal.ca/programmes/maitrise-en-informatique · registraire.umontreal.ca/droits-de-scolarite/couts</p>
+</section>
+<section class="page prog">
+  <div class="tete"><span class="num">6</span><div><h2>UQAM</h2><p class="sous">Maîtrise en informatique (3281, avec mémoire) · Montréal (Québec)</p></div><span class="badge moy">Chances moyennes</span></div>
+  <p class="raison"><b>Pourquoi ces chances :</b> Ta moyenne estimée (3,3) est juste au-dessus du minimum de 3,2 : c'est serré.</p>
+  <div class="grille">
+    <div><h4>Admission</h4>
+      <dl><dt>Moyenne exigée</dt><dd>3,2 sur 4,3. Entre 2,7 et 3,2 : dossier étudié au cas par cas.</dd><dt>Test de langue</dt><dd>Aucun score exigé trouvé pour un francophone.</dd><dt>Documents</dt><dd>Relevés, lettre d'intention (lettres de recommandation facultatives).</dd>
+      <dt>Frais de demande</dt><dd>155 $</dd></dl></div>
+    <div><h4>Dates</h4>
+      <dl><dt>Date limite</dt><dd><b>1er mars 2027</b></dd><dt>Début des cours</dt><dd>7 septembre 2027</dd><dt>Durée</dt><dd>45 crédits, 2 ans à temps plein</dd><dt>Langue</dt><dd>Français</dd></dl></div>
+  </div>
+  <h4>Ce que coûte la 1re année</h4>
+  <table class="cout">
+    <tr><td>Scolarité et frais</td><td>25 036 $</td><td class="note">1re année, frais généraux et cotisations compris. 2e année : environ 8 746 $</td></tr>
+    <tr><td>Assurance maladie obligatoire</td><td>972 $</td><td></td></tr>
+    <tr><td>Logement et nourriture</td><td>15 200 $</td><td class="note">budget minimum de l'UQAM sur 12 mois (logement et nourriture)</td></tr>
+    <tr class="tot"><td>Total estimé</td><td>41 208 $</td><td>≈ 17 060 000 FCFA</td></tr>
+  </table>
+  <h4>Bourses et réductions possibles</h4><ul><li><b>Bourse d'exemption des droits majorés</b> : sur demande, moyenne d'au moins 2,8, temps plein, nombre limité chaque année. Elle ferait baisser fortement la 1re année.</li></ul>
+  <div class="grille pm"><p><b>👍 Le plus :</b> Au centre de Montréal, beaucoup d'étudiants africains.</p><p><b>⚠️ Le point faible :</b> 1re année au-dessus de ton budget sans bourse.</p></div>
+  <p class="liens">Sources officielles : etudier.uqam.ca/programme?code=3281 · etudier.uqam.ca/etudiants-internationaux/cout</p>
+</section>
 
-  <h2>Recommandation</h2>
-  <p>Postuler en priorité à Moncton et à Laval (après avoir trouvé un directeur), puis ajouter 2 ou 3 autres maîtrises en français avant de choisir les 3 dossiers finaux.</p>
-  <p class="doux">Dans un vrai dossier, la fiche compte 5 à 8 programmes. Les frais 2027-2028 ne sont pas encore publiés : ceux-ci sont ceux de 2026-2027. Pour le permis d'études, adresse-toi à un consultant réglementé.</p>
+<section class="page">
+  <h3>3. Ton calendrier jusqu'à la rentrée</h3>
+  <table class="cal"><tr><td>Cette semaine (16-22 nov.)</td><td>Demande tes relevés de notes et ton diplôme certifiés à l'université. Demande 3 lettres de recommandation à des professeurs.</td></tr><tr><td>Avant le 1er décembre</td><td>Écris à 4 ou 5 professeurs de Laval et de Sherbrooke qui travaillent sur ton sujet (je t'aide avec le premier courriel dans l'offre « Maîtrise avec mémoire »).</td></tr><tr><td>Décembre</td><td>Rédige ta lettre d'intention (une version, puis adaptée à chaque université) et mets ton CV au format canadien.</td></tr><tr><td>Avant le 20 janvier 2027</td><td>Dépose à l'UQO et à Laval. Demande la bourse d'exemption de l'UQO dès que le formulaire de l'automne 2027 est ouvert.</td></tr><tr><td>1er février 2027</td><td>Date limite Laval et Université de Montréal.</td></tr><tr><td>1er mars 2027</td><td>Date limite UQAM et UQO (si tu n'as pas déjà déposé).</td></tr><tr><td>Mars-mai 2027</td><td>Réponses des universités. Dépose à Moncton si une réponse se fait attendre.</td></tr><tr><td>31 mai 2027</td><td>Date limite Moncton.</td></tr></table>
+  <h3>4. Les documents à préparer</h3>
+  <ul class="check"><li>Passeport valide (page d'identité)</li><li>Acte de naissance</li><li>Diplôme de licence (copie certifiée)</li><li>Relevés de notes des 3 années (certifiés, sous enveloppe scellée si demandé)</li><li>CV au format canadien (2 pages maximum)</li><li>Lettre d'intention (300 à 500 mots, adaptée à chaque université)</li><li>3 lettres de recommandation de professeurs</li><li>Accord écrit d'un directeur de recherche (Laval, et Sherbrooke en recherche)</li><li>Frais de demande : environ 526 $ pour UQO + Moncton + Sherbrooke</li><li>Carte Visa ou Mastercard (ou carte virtuelle Wave) pour payer les frais en ligne</li></ul>
+</section>
 
-  <p style="margin-top:32px"><a class="bouton" href="index.html">Revenir à l'accueil</a></p>
-</main>
-<footer><p class="doux">Service d'accompagnement à l'admission. Ce n'est pas un service de conseil en immigration. <a href="conditions.html">Conditions du service</a></p></footer>
-</body>
-</html>
+<section class="page">
+  <h3>5. Mon conseil</h3>
+  <p>Postule à <b>3 programmes</b>, pas plus : chaque demande coûte entre 100 et 300 $ et demande du temps.</p>
+  <ol class="reco">
+    <li><b>UQO (Gatineau)</b> : tes meilleures chances, et la bourse d'exemption peut faire tomber la scolarité à environ 2 300 $ par an. Dépose avant le 20 janvier et soigne le texte de 300 mots de la bourse.</li>
+    <li><b>Université de Moncton</b> : dans ton budget sans bourse, en français, et date limite au 31 mai : c'est ta sécurité.</li>
+    <li><b>Université de Sherbrooke (type cours)</b> : avec l'appui financier, environ 17 000 $ de scolarité la 1re année ; aucun directeur de recherche à trouver.</li>
+  </ol>
+  <p><b>Si tu veux faire de la recherche</b> (et viser un doctorat plus tard) : remplace Sherbrooke par <b>Laval</b>, mais seulement si un professeur accepte de te diriger avant le 1er février.</p>
+  <h4>Coût total de tes 3 demandes</h4><p>UQO 120 $ + Moncton 300 $ + Sherbrooke 106 $ = <b>526 $</b> (≈ 218 000 FCFA).</p>
+  <h3>6. Et maintenant ?</h3>
+  <ul><li>Tu peux me poser toutes tes questions sur cette fiche sur WhatsApp pendant <b>7 jours</b>.</li><li>Pour la suite, l'offre <b>Dossier d'admission</b> (199 $) : ta lettre d'intention et ton CV, relus et corrigés pour ces 3 universités.</li></ul>
+  <p class="pied" style="margin-top:30px">Cap Admission Canada · WhatsApp +1 263 881-2914 · louikagirard-creator.github.io/admissions-canada<br>Aide à l'admission seulement : aucun conseil sur le permis d'études, le visa ou la preuve de fonds.</p>
+</section>
+</body></html>
